@@ -1,0 +1,170 @@
+:root{
+    --background-color: #1c1c1c;
+    --accent-color:#C43E3E;
+    --outside-text:rgb(245, 245, 245);
+
+}
+*{
+    box-sizing: border-box;
+}
+body, html{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    font-family: 'inter',sans-serif;
+}
+.main-container{
+    display:flex;
+    height:100%;
+    width:100%;
+
+}
+.left-container{
+    background-image: url(images/miguel-davis-V6K83zGHkUE-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+    width:60%;
+    position:relative;
+}
+
+.overlay-logo{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: #1d1c1c;
+    opacity: 85%;
+    bottom:70%;
+    padding:4%
+}
+
+h1.company-name{
+    font-size: 48px;
+    color: var(--outside-text)
+}
+/* Right Content */
+
+.right-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    width:100%;
+}
+
+.header{
+    width:75%;
+    padding-left:8%;
+    margin-bottom: 35px;
+}
+h1,h2{
+    margin:0;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight:700;
+    color:var(--outside-text);
+}
+
+i{
+    color:var(--accent-color);
+}
+
+h2{
+    font-size: 1.4rem;
+    margin-bottom:16px;
+}
+
+.textbox_container{ /* container for items -- including 'lets do this' */
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    padding:4%;
+    padding-left:8%;
+    box-shadow: 0 8px 8px rgb(0, 0, 0);
+}
+
+
+.textbox_container_field{ /* creates grid for text form */
+    width:600px;
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: minmax(48px auto);
+    grid-column-gap:64px;
+    grid-row-gap:16px;
+}
+.textbox{ /* makes the labels be above txt box */
+    display:flex;
+    font-size: 12px;
+    font-weight:lighter;
+    color:rgb(134, 134, 134);
+    flex-direction: column;
+}
+
+input:invalid{
+    border-color:red;
+    height:28px;
+    outline:0;
+
+    
+}
+
+input:valid{
+    border-color:rgb(141, 139, 139);
+    border-radius: 4px;
+    height:28px;
+    outline:0;
+
+
+}
+.bottom-info{
+    padding-left:8%;
+}
+.create_button{ /* button */
+    background-color: var(--accent-color);
+    color:white;
+    font-weight:600;
+    font-size: 16px;
+    padding:10px 32px;
+    border-radius: 8px;
+    margin:32px 0;
+    width:200px;
+    border-style: none;
+}
+label{
+    text-transform: uppercase;
+}
+.create_button:hover{
+    background-color: #a73535
+}
+
+.create_button:active{
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+
+}
+
+.account{ /* account log in */
+    color:var(--outside-text);
+}
+
+.login{
+color:var(--accent-color);
+font-weight: 700;
+margin-left:10px;
+}
+
+.login:hover{
+    color:white;
+}
+
+.error_message{
+color:red;
+}
+

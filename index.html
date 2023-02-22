@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel='stylesheet' href='/styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='main-container'>
+       <div class='left-container'>
+           <div class='overlay-logo'>
+               <img src='images/icons8-listening-to-music-on-headphones-100.png'>
+               <h1  class='company-name'>Sync App</h1>
+           </div>
+       </div>
+<div class='right-container'>
+           <div class='header'>
+
+           <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h1>
+           </h1>
+           <h1>Sign up <i>now</i> to get started.</h1>
+
+           <br />
+           <h1><i>you know you want to</i></h1>
+        </div>
+<div class='textbox-container'>
+    <form action='/' method='GET'>
+
+    <div class='textbox_container'>
+
+            <h2>Lets do this!</h2>
+            <div class='textbox_container_field'>
+
+                <div class='textbox'>
+                    <label for='first'>*First Name</label>
+                    <input type='text' id='first_name' name='first_name' minlength='2' maxlength='8' >
+                    <span class='error_message'></span>
+
+                </div>
+
+                <div class='textbox'>
+                    <label for='last'>*Last Name</label>
+                    <input type='text' id='last_name' name='last_name' minlength='2' maxlength='8'  >
+                    <span class='error_message'></span>
+
+                </div>   
+
+                <div class='textbox'>
+                    <label for='email'>*Email</label>
+                    <input type='email' id='email' name='email' minlength='10' maxlength='15' >
+                    <span class='error_message'></span>
+
+                </div>
+
+
+                <div class='textbox'>
+                    <label for='number'>*Phone Number</label>
+                    <input type='tel' id='tel' name='phone-number' pattern='\d{3}[\-]\d{3}[\-]\d{4}' 
+                    title='Please enter a 10 digit number. Example: 123-456-7890'
+                    maxlength='10' minlength='10' >
+                    <span class='error_message'></span>
+
+                </div>
+
+
+                <div class='textbox'>
+                    <label for='pwd'>*Password</label>
+                    <input type='password' id='pwd' name='password'  pattern='(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$' 
+                    title='Your password must be at least 8 characters with at least one(1) uppercase letter, 1 lowercase, and 1 special character' minlength='8' >
+                    <span class='error_message'></span>
+
+                </div>
+
+                <div class='textbox'>
+                    <label for='pwd'>Confirm password</label>
+                    <input type='password' id='password' name='confirm-password' minlength='8' maxlength='12' >
+                    <span class='error_message'></span>
+
+                </div>
+
+            </div>
+    </div>
+    <div class='bottom-info'>
+        <button class='create_button' type='submit'>Create Account</button>
+        <div class='account'>
+            Already have an account?
+            <a class='login' href='http://www.google.com'>Log in</a>
+        </div>
+    </form>
+</div>
+</div>
+
+    </div>
+</div>
+<script src='script.js'></script>
+</body>
+</html>
